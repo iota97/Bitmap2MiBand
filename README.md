@@ -8,6 +8,11 @@ Works only with 24 BPP bitmap, if your image results corrupted please double che
 
 Image will be cropped to get a height multiple of 8.
 
+## **Compile**
+
+gcc bitmap2miband.c -O2 -o bitmap2miband
+
+gcc viewer.c -O2 -o viewer
 
 ## **How to use**
 
@@ -43,7 +48,7 @@ viewer *hex_string* *starting_line_lenght(optional)*
 
 If *starting_line_lenght* is omitted it will be set to 1.
 
-#### **Controls**:
+#### *Controls*:
 
 *Enter* - Increase/decrease line lenght.
 

@@ -62,6 +62,13 @@ int main(int argc, char *argv[]) {
 	
 	height -= height % 8;
 
+	// Calculate the padding
+
+	int8_t padding = 4 + (width * -3) % 4;
+
+	if (padding == 4)
+		padding = 0;
+
 	// Get to the pixels data
 
 	fseek(fp, pixel_start, SEEK_SET);
@@ -91,7 +98,7 @@ int main(int argc, char *argv[]) {
 		
 		// Skip padding pixels
 
-		fseek(fp, 4 + (width * -3) % 4, SEEK_CUR);
+		fseek(fp, padding, SEEK_CUR);
 
 	}
 	
