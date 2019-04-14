@@ -1,6 +1,6 @@
 ## **A simple bitmap to MiBand firmware binary code converter**
 
-Tested on Mi Band 2.
+Tested on Mi Band 2 V0.1.3.2 (Mili_pro).
 
 #### **Limitation**
 
