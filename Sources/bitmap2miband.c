@@ -10,6 +10,7 @@ Image will be cropped to get a height multiple of 8.
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
   
 int main(int argc, char *argv[]) {
 
@@ -75,9 +76,9 @@ int main(int argc, char *argv[]) {
 
 	// Put the pixels color into an array
 
-	u_int8_t parsed_bmp[width*height];
+	uint8_t parsed_bmp[width*height];
 
-	u_int32_t counter = 0;
+	uint32_t counter = 0;
 
 	for (int32_t row = 0; row < height; row++) {
 
@@ -109,7 +110,7 @@ int main(int argc, char *argv[]) {
 	
 	// Sort pixels into an array matching the MiBand pattern
 
-	u_int8_t sorted_bmp[width*height];
+	uint8_t sorted_bmp[width*height];
 
 	if (topdown_order == 1) {
 
